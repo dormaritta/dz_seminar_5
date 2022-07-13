@@ -9,16 +9,19 @@ int count = 0;
 for (int i = 0; i < length; i++)
 {
     array[i] = new Random().Next(100, 999);
+
+    if (array[i] % == 0)
+    {
+        sum += array[i];
+    }
 }
 
-foreach(int element in array)
+/* foreach(int element in array)
 {
     Console.Write("{0} ", element);
     if (element % 2 == 0)
     {
         count++;
     }
-}
-
-Console.WriteLine();
-Console.WriteLine("Количество чётных элементов: {0}", count);
+} */
+Console.WriteLine(sum);
